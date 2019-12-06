@@ -85,7 +85,7 @@
 %%
 %% The "title" command has an optional parameter,
 %% allowing the author to define a "short title" to be used in page headers.
-\title{College Majors, Earnings, and Employability: A Visual Investigation}
+\title{College Majors, Earnings, and Employability:\\ A Visual Investigation}
 
 %%
 %% The "author" command and its associated commands are used to define
@@ -221,7 +221,7 @@ To avoid confusion and to provide clarification, "major" will be commonly referr
   
 \section{Charts, Dashboards, Questions, and Answers}
 
-In this section I will discuss each Dashboard one at a time. The user is meant to traverse through each if they wish to follow a logical progression or story. Of course, the user can also view dashboards in whatever order they wish or pick and choose to investigate whatever question(s) they may have. The motivation and target for each dashboard will be discussed, as well as the visual encoding, any major drawbacks, as well as interesting finds.
+In this section I will discuss each Dashboard one at a time. The user is meant to traverse through each if they wish to follow a logical progression or story. Of course, the user can also view dashboards in whatever order they wish or pick and choose to investigate whatever question(s) they may have. The motivation and target for each dashboard will be discussed, as well as the visual encoding, any major drawbacks, and any interesting observations.
 
 \subsection{Dashboard 1: Fields and their Popularity}
 \label{sec:db1}
@@ -235,6 +235,12 @@ This dashboard answers the question "What kind of jobs are there?". For now, we 
   \includegraphics[width=1.0\textwidth]{DB3.png}
      \caption{Dashboard 3: Major Categories and a Box Plot of all Earnings for Majors and Major Categories}
          \label{fig:db3}
+  \end{figure*}
+  
+  \begin{figure*}[thpb]
+  \includegraphics[width=1.0\textwidth]{DB4.png}
+     \caption{Dashboard 4: Unemployment Rate vs Median Salary for recent grads and all ages}
+         \label{fig:db4}
   \end{figure*}
 
 \subsection{Dashboard 2: Specializations, Popularity, and an Introduction to Earnings}
@@ -255,10 +261,10 @@ The third chart is bar chart showing the average earnings of each field. This is
 
 It is important to note that all portrayals of salary on this dashboard use the salary information for all ages rather than for recent graduates. This was done deliberately because the user, when looking at general salary information, is mostly interested in how much they \textit{can} make rather than how much they will make right out of school. Furthermore, the salary levels of recent graduates are very similar, and would have resulted in a map chart with mostly homogeneous colour. This extends to Dashboard 3 as well, but not to Dashboard 4, where the salary is clearly defined as either recent graduate or all ages, since the comparison between the two is what is important on that dashboard.
 
-\begin{figure*}[thpb]
-  \includegraphics[width=1.0\textwidth]{DB4.png}
-     \caption{Dashboard 4: Unemployment Rate vs Median Salary for recent grads and all ages}
-         \label{fig:db4}
+  \begin{figure*}[thpb]
+  \includegraphics[width=1.0\textwidth]{SP1.png}
+     \caption{Median Salary vs Percentage Female}
+         \label{fig:sp1}
   \end{figure*}
   
 \subsection{Dashboard 3: An In-Depth Look at Earnings}
@@ -278,10 +284,11 @@ There are 7 positive outliers, some of the more notable ones include Petroleum E
 
 The box plot on this dashboard has not been ordered based on ascending or descending salary. Instead, the same ordering from Dashboard 1 has been kept. This consistent ordering helps combat the colour encoding issue where we have too many colour hues for too many fields. In fact, this ordering is particularly important on the box plot because colour hue is hard to distinguish on the plot due to the small size of the marks.
 
+
   \begin{figure*}[thpb]
-  \includegraphics[width=1.0\textwidth]{SP1.png}
-     \caption{Median Salary vs Percentage Female}
-         \label{fig:sp1}
+  \includegraphics[width=1.0\textwidth]{DB5.png}
+     \caption{Dashboard 5: Underutilized Rate vs Unemployment Rate}
+         \label{fig:db5}
   \end{figure*}
 
 
@@ -301,11 +308,6 @@ The mean lines for each quantitative variable are also shown as grey lines runni
 
 The upper-right quadrant does not contain very many marks compared to the other three. Majors that lie here are both high-paying, yet also in low demand, which seems counter-intuitive at first. This is where the juxtaposition of the all ages graph is highly useful. As we can see, most of the marks that appear in this quadrant, such as Mining and Mineral Engineering, Nuclear Engineering, and Economics, have much lower unemployment than recent graduates. From this, we can infer that these specializations do not commonly employ recent graduates, and instead, prefer those that have experience. This makes a lot of sense especially when you consider the nature of the work of Nuclear Engineers or Economists.
 
-  \begin{figure*}[thpb]
-  \includegraphics[width=1.0\textwidth]{DB5.png}
-     \caption{Dashboard 5: Underutilized Rate vs Unemployment Rate}
-         \label{fig:db5}
-  \end{figure*}
 
 
 
